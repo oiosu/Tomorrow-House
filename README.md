@@ -29,40 +29,11 @@
 * Backend Swagger : http://mini.jh1105.xyz:5305/swagger-ui/index.html
 
 
-◾ 회원가입 : POST `/api/sign/register` 
-
-◾ 로그인 : POST `/api/sign/login`
-
-◾ 회원가입 : DELETE `/api/sign/{user_id}` 
-
-◾ 판매상품등록 : POST `/api/post/add/` 
-
-◾ 판매상품수정 : PUT `/api/post/update` 
-
-◾ 판매상품삭제 : DELETE `/api/post/{post_id}`
-
-◾ 모든상품페이지조회(일반user) : GET `api/post/normal` 
-
-◾ 단일상품페이지조회(판매자) : GET `api/post/{post_id}` 
-
-◾ 카테고리별 상품페이지조회(판매자) : GET `api/post/category/` 
-
-◾ 판매중인 모든상품페이지조회(판매자) : GET `api/post/seller-page/` 
-
-◾ 판매자 ID로 모든상품페이지조회(판매자) : GET `api/post/seller/` 
-
-◾ 장바구니 상품 담기 : POST `api/cart/add` 
-
-◾ 장바구니 상품 수량 변경 : PUT `api/cart/updateCount/{cart_item_id}`
-
-◾ 장바구니 상품 삭제 : DELETE `api/cart/delete/{cart_item_id}` 
-
-◾ 유저 장바구니 조회 : GET `/api/myPage/cart` 
-
-◾ 유저 정보 조회 : GET `/api/myPage/UserInfo` 
+### 2. FIGMA
+![image](https://github.com/oiosu/Tomorrow-House/assets/99783474/706452b2-badc-468b-8eeb-421fc99ef97d)
 
 
----
+
 
 
 
