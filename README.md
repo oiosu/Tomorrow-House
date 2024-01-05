@@ -316,11 +316,113 @@ npm install react-share
 
 ---
 
-#### 4. Cart 
+### 4. Cart 
 
 ![image](https://github.com/oiosu/Tomorrow-House/assets/99783474/57b59849-48f9-4ca4-a0d4-220308d51307)
 ![image](https://github.com/oiosu/Tomorrow-House/assets/99783474/a562b141-26aa-4176-b5fd-64efce19c3c7)
+![2024-01-05-12_26_15](https://github.com/oiosu/Tomorrow-House/assets/99783474/1e57071f-d0c6-421b-8668-8d6d45f6d16f)
 
+
+```javascript
+import React from 'react';
+import { useDispatch, useSelector } from "react-redux";
+import { addCount } from './store';
+import { useNavigate } from "react-router-dom";
+
+const Cart = () => {
+    const dispatch = useDispatch();
+    const state = useSelector((state) => state);
+    const navigate = useNavigate();
+
+    return (
+        <Table>
+            <div className='cart-box'>
+                <div className='item-box'>
+                    {state.cart.map((item, i) => (
+                        <div className='cart-card' key={i}>
+                            <img
+                                src={item.imageUrls}
+                                alt="01"
+                            />
+                            <div className='cart-name'>{item.name}</div>
+                            <div className='count'>
+                                <div className='count-number'>{item.count}</div>
+                                <button onClick={() => dispatch(addCount(i))}>+</button>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+                <div>
+                    <button onClick={navigatePayment} className='order-btn'>주문하기</button>
+                </div>
+            </div>
+        </Table>
+    );
+};
+
+export default Cart;
+
+```
+
+> `useDispatch` 를 사용하여 Redux의 `dispatch` 함수 가져오고 `useSelector` 를 사용하여 Redux의 상태를 가져올 수 있도록 코드를 작성했습니다.
+>
+> `state.cart` 배열을 매핑하여 각 상품을 나타내는 `cart-card` 클래스를 가진 div 로 구성된 요소를 생성하고
+>
+> 수량 증가 버튼을 클릭하면 해당 상품의 index를 이용하여 Redux의 `addCount`액션을 dispatch하여 수량을 증가 시킬 수 있도록 구현했습니다.
+>
+> 주문하기 버튼을 클릭하면 `navigatePayment` 함수가 호출되고 React Router의 `useNavigate`를 통해 정의된 경로로 이동할 수 있도록 구현했습니다. 
+
+
+
+```javascript
+import { configureStore, createSlice } from '@reduxjs/toolkit';
+
+let user = createSlice({
+    name: "user",
+    initialState: { name: 'kim', age: 20 },
+    reducers: {
+        changeName(state) {
+            return { name: 'park', age: 20 }
+        }
+    }
+})
+
+export let { changeName } = user.actions
+
+
+let cart = createSlice({
+    name: "cart",
+    initialState: [
+        { id: 0, name: '비침없는 도톰 레이스/쉬폰 커튼', count: 2, imageUrls: "162303132447303472.jpeg" },
+        { id: 2, name: '삼성전자 스마트모니터 M7 S43 화이트 4K UHD', count: 1, imageUrls: "168610157896491054.jpg" }
+    ],
+    reducers: {
+        addCount(state, actions) {
+            state[actions.payload].count++
+        },
+        addItem(state, action) {
+            state.push(action.payload)
+        }
+    }
+});
+
+export let { addCount, addItem } = cart.actions
+
+export default configureStore({
+    reducer: {
+        user: user.reducer,
+        cart: cart.reducer
+    }
+});
+
+```
+
+---
+
+#### 📌 반응형 구현 ( 768 반응형, 360 반응형 )
+
+![785shots_so](https://github.com/oiosu/Tomorrow-House/assets/99783474/cf1ab846-d95b-4e8c-af66-5c09b3f2c857)
+![648shots_so](https://github.com/oiosu/Tomorrow-House/assets/99783474/adaacc61-47af-455a-ab59-27906c0de8dd)
 
 
 
