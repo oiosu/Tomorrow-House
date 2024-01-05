@@ -33,6 +33,16 @@
 ![image](https://github.com/oiosu/Tomorrow-House/assets/99783474/706452b2-badc-468b-8eeb-421fc99ef97d)
 
 
+---
+
+### 3. MainPage 
+![image](https://github.com/oiosu/Tomorrow-House/assets/99783474/23690981-8384-4584-b486-11a378baeb93)
+![image](https://github.com/oiosu/Tomorrow-House/assets/99783474/df366cfc-5062-46e7-ab58-5236549bb58f)
+![image](https://github.com/oiosu/Tomorrow-House/assets/99783474/df3f0aa9-14f5-4be9-a8dd-ee1ca159b75a)
+![image](https://github.com/oiosu/Tomorrow-House/assets/99783474/5d5cb22d-06df-4e38-8944-3c4f64425d15)
+![image](https://github.com/oiosu/Tomorrow-House/assets/99783474/90996594-d5ba-40a2-a7a2-0c32d862b959)
+![image](https://github.com/oiosu/Tomorrow-House/assets/99783474/50f3c499-8499-4ee2-82f6-3b6c9fd17847)
+
 
 
 
