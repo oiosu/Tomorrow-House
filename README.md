@@ -11,14 +11,18 @@
 ### ✔️Back-end
 <img src="https://img.shields.io/badge/swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=green">
 
-    BE Team : 김은지(CTO) (마이페이지, 장바구니) , 정재화 (쇼핑몰 판매, 조회), 유동후 (유저 로그인 / 로그아웃, 주문)
+| 정재화 | 김은지(CTO) | 유동후 |
+| --- | --- | --- |
+| 쇼핑몰 판매, 조회 | 마이페이지, 장바구니 | 유저 로그인 / 로그아웃, 주문 |
+
 
 ### ✔️Frond-end
 <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=black"><img src="https://img.shields.io/badge/styledcomponents-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white"><img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=Redux&logoColor=purple">
 
-    FE Team : 임수경(CTO) (메인페이지, 장바구니), 김여울 (베스트상품, 결제완료), 김두희 (주문목록, 상품상세), 이세호 (로그인, 회원가입), 이주연 (관리자 페이지)
+| 이세호 | 이주연 | 임수경(CTO) | 김두희 | 김여울 |
+| --- | --- | --- | --- | --- |
+| 로그인, 회원가입 | 관리자 페이지 | 메인페이지, 장바구니 | 주문목록, 상품상세 | 베스트 상품, 결제완료 |
 
----
 
 
 ### 1. ERD
