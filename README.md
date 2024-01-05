@@ -307,10 +307,10 @@ npm install react-share
 
 * 선언 시 사용할 수 있는 props는 총 6가지
 
-            size: Icon size in pixels (number): 아이콘 사이즈(픽셀 단위)
-            round: Whether to show round or rect icons (bool): 아이콘을 둥글게 혹은 사각형으로
-            borderRadius: Allow rounded corners if using rect icons (number): 테두리
-            bgStyle: customize background style, e.g. fill (object): 배경색 설정 기능
-            iconFillColor: customize icon fill color (string, default = 'white'): 아이콘 색 설정 기능
+      size: Icon size in pixels (number): 아이콘 사이즈(픽셀 단위)
+      round: Whether to show round or rect icons (bool): 아이콘을 둥글게 혹은 사각형으로
+      borderRadius: Allow rounded corners if using rect icons (number): 테두리
+      bgStyle: customize background style, e.g. fill (object): 배경색 설정 기능
+      iconFillColor: customize icon fill color (string, default = 'white'): 아이콘 색 설정 기능
 
 
