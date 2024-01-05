@@ -80,6 +80,54 @@ const Banner = () => {
 
 ```
 
+### 📌 코드 중복성 줄이기 
+
+> 코드를 더 유지 관리 쉽고 읽기 쉽게 만들 수 있도록 다음과 같이 코드를 수정하는 방향으로 생각보았습니다.
+> 
+> 각 범주를 나타내는 객체 배열을 만든 다음 해당 배열을 매핑하여 목록 항목을 동적으로 생성하였습니다.
+>
+> * `CategoryList.jsx`
+
+```javascript
+import React from "react";
+
+const categories = [
+  {
+    id: 1,
+    imageUrl: "..170260512138923955.png/512/none",
+    alt: "1",
+    text: "연말빅세일"
+  },
+  // Add other categories here
+];
+
+const CategoryList = () => {
+  return (
+    <CategoryHere>
+      <div className="nav">
+        <ul className="ul-list">
+          {categories.map((category) => (
+            <li key={category.id} className="li-list">
+              <figure>
+                <img
+                  src={category.imageUrl}
+                  alt={category.alt}
+                />
+              </figure>
+              <div className="li-text">
+                <span>{category.text}</span>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </CategoryHere>
+  );
+};
+
+export default CategoryList;
+
+```
 
 
 
