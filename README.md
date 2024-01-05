@@ -98,7 +98,7 @@ const categories = [
     alt: "1",
     text: "연말빅세일"
   },
-  // Add other categories here
+ 
 ];
 
 const CategoryList = () => {
