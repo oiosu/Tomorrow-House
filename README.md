@@ -29,37 +29,37 @@
 * Backend Swagger : http://mini.jh1105.xyz:5305/swagger-ui/index.html
 
 
-◾ 회원가입 : POST `/api/sign/register` _ 이메일, 패스워드, 이름, 닉네임, 전화번호, 성별, 주소, 프로필 이미지 입력 후 회원가입 
+◾ 회원가입 : POST `/api/sign/register` 
 
-◾ 로그인 : POST `/api/sign/login` _ JWT 인증 토큰 값을 이용해서 이메일, 패스워드 입력 후 로그인 
+◾ 로그인 : POST `/api/sign/login`
 
-◾ 회원가입 : DELETE `/api/sign/{user_id}` _ 입력한 user_id에 해당하는 회원의 상태를 deleted로 갱신 
+◾ 회원가입 : DELETE `/api/sign/{user_id}` 
 
-◾ 판매상품등록 : POST `/api/post/add/` _ 판매자 id로 로그인 후 판매할 상품 등록 
+◾ 판매상품등록 : POST `/api/post/add/` 
 
-◾ 판매상품수정 : PUT `/api/post/update` _ 판매자 id로 로그인 후 판매 중인 상품 정보 수정 
+◾ 판매상품수정 : PUT `/api/post/update` 
 
-◾ 판매상품삭제 : DELETE `/api/post/{post_id}` _ 판매자 id로 로그인 후 판매 중인 상품 삭제 
+◾ 판매상품삭제 : DELETE `/api/post/{post_id}`
 
-◾ 모든상품페이지조회(일반user) : GET `api/post/normal` _ 판매자가 아닌 로그인한 일반 유저가 판매 중인 상품 페이지 조회 
+◾ 모든상품페이지조회(일반user) : GET `api/post/normal` 
 
-◾ 단일상품페이지조회(판매자) : GET `api/post/{post_id}` _ 판매자가 자신이 판매 중인 상품 중 하나만 선택해서 조회 
+◾ 단일상품페이지조회(판매자) : GET `api/post/{post_id}` 
 
-◾ 카테고리별 상품페이지조회(판매자) : GET `api/post/category/` _ 판매자가 자신이 판매 중인 상품을 카테고리별로 선택해서 조회 
+◾ 카테고리별 상품페이지조회(판매자) : GET `api/post/category/` 
 
-◾ 판매중인 모든상품페이지조회(판매자) : GET `api/post/seller-page/` _ 판매자가 자신이 판매 중인 모든 상품을 조회 
+◾ 판매중인 모든상품페이지조회(판매자) : GET `api/post/seller-page/` 
 
-◾ 판매자 ID로 모든상품페이지조회(판매자) : GET `api/post/seller/` _ 판매자 id로 판매 중인 모든 상품을 조회 
+◾ 판매자 ID로 모든상품페이지조회(판매자) : GET `api/post/seller/` 
 
-◾ 장바구니 상품 담기 : POST `api/cart/add` _ 아이템 수량과 옵션을 선택해서 장바구니 안에 상품 담기 
+◾ 장바구니 상품 담기 : POST `api/cart/add` 
 
-◾ 장바구니 상품 수량 변경 : PUT `api/cart/updateCount/{cart_item_id}` _ 장바구니 안 상품 아이디를 이용해서 상품 수량 변경 
+◾ 장바구니 상품 수량 변경 : PUT `api/cart/updateCount/{cart_item_id}`
 
-◾ 장바구니 상품 삭제 : DELETE `api/cart/delete/{cart_item_id}` _ 장바구니 안 상품 아이디를 이용해서 상품 삭제 
+◾ 장바구니 상품 삭제 : DELETE `api/cart/delete/{cart_item_id}` 
 
-◾ 유저 장바구니 조회 : GET `/api/myPage/cart` _ JWT 인증 토큰 값을 이용해서 현재 로그인한 유저의 장바구니 불러오기 
+◾ 유저 장바구니 조회 : GET `/api/myPage/cart` 
 
-◾ 유저 정보 조회 : GET `/api/myPage/UserInfo` _ JWT 인증 토큰 값을 이용해서 현재 로그인한 유저의 정보 불러오기 
+◾ 유저 정보 조회 : GET `/api/myPage/UserInfo` 
 
 
 ---
