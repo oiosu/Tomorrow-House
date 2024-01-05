@@ -53,7 +53,32 @@
 $ npm install swiper
 ```
 
+![2024-01-05-10_42_01](https://github.com/oiosu/Tomorrow-House/assets/99783474/a4f693a6-2537-4bd1-9b60-107ac3cc542b)
 
+
+```Javascript
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+
+//...
+const Banner = () => {
+  return (
+    <>
+      <BannerContainer>
+              <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                <SwiperSlide className="one">
+                  <img
+                    src=" "
+                    alt="Slide 1"
+                  />
+                </SwiperSlide>
+             </Swiper>
+      <BannerContainer>
+//...
+
+```
 
 
 
