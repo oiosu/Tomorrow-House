@@ -44,6 +44,8 @@
 ![image](https://github.com/oiosu/Tomorrow-House/assets/99783474/50f3c499-8499-4ee2-82f6-3b6c9fd17847)
 
 
+
+
 #### 📌 Swiper
 
 * Swiper는 웹 및 모바일 웹 플리케이션에서 이미지 또는 콘텐츠 슬라이드쇼를 만들기 위한 자바스크립트 라이브러리 중 하나입니다.
@@ -79,6 +81,8 @@ const Banner = () => {
 //...
 
 ```
+
+
 
 
 #### 📌 코드 중복성 줄이기 
@@ -131,6 +135,8 @@ export default CategoryList;
 
 ```
 
+
+
 #### 📌 알림을 자동으로 숨기는 기능 
 
 ![2024-01-05-11_32_38](https://github.com/oiosu/Tomorrow-House/assets/99783474/3d49ad90-3861-4eed-8e37-91d5492c5bef)
@@ -179,6 +185,90 @@ export default Nav;
 
 
 
+
 #### 📌 오늘의 베스트 상품
 
 ![image](https://github.com/oiosu/Tomorrow-House/assets/99783474/2c7105b7-a43c-479a-acb4-26d018972e77)
+
+```javascript
+import React, { useState } from 'react';
+import data from "./data";
+import { addItem } from '../Basket/store';
+import { useDispatch } from "react-redux";
+
+const BestSale = () => {
+
+  let [products] = useState(data)
+  let dispatch = useDispatch()
+
+  return (
+    <SaleSection>
+      <header className="new-title">
+        <h2>오늘의 베스트 상품</h2>
+      </header>
+      <div className="bigsale-item">
+        <ul>
+          <li className="item-img">
+            <img
+              src="162303132447303472.jpeg?gif=1&w=360&h=360&c=c&q=0.8&webp=1"
+              alt="01"
+            />
+            <Card item={products[0]}></Card>
+            <div className="item-btn">
+              <button className="free-btn">할인 쿠폰</button>
+              <button className="big-btn">특가</button>
+              <button className='big-btn'
+                onClick={() => {
+                  dispatch(addItem({ id: 2, name: 'gray yordan', count: 1 }))
+                }}>
+                주문하기
+              </button>
+            </div>
+          </li>
+
+```
+
+```javascript
+let data = [
+    {
+        id: 1,
+        title: "비침없는 도톰 레이스/쉬폰 커튼",
+        rate: "23%",
+        price: "16,800"
+    },
+
+    {
+        id: 2,
+        title: "삼성전자 스마트모니터 M7 S43 화이트 4K UHD",
+        rate: "42%",
+        price: "579,000"
+    },
+
+    {
+        id: 3,
+        title: "삼성 81cm M5 S32 삼탠바이미 패키지 OTT",
+        rate: "23%",
+        price: "419,000"
+    },
+
+    {
+        id: 4,
+        title: "후기6만돌파! 40수 코마사 호텔수건 200g 10장",
+        rate: "62%",
+        price: "28,900"
+    },
+];
+
+export default data;
+```
+
+> Redux를 사용하여 상품을 장바구니에 추가하는 기능을 구현하였습니다.
+>
+> `useState` 를 사용하여 products 상태 변수를 초기화하고 이를 `data`로 설정 합니다.
+>
+> `useDispatch`를 사용하여 Redux의 `dispatch` 함수를 가져오는 방식입니다.
+> * 상품 이미지, Card 컴포넌트, 할인 및 주문하기 버튼등이 포함되어 있도록 코드를 작성하였고 각 상품에 대한 정보는 `data` 배열에서 가져와서 사용하였습니다.
+>
+> * Redux의 addItem 액션을 호출하여 장바구니에 상품을 추가합니다.
+>
+>  상품 정보를 나타내는 Card 함수형 컴포넌트에는 `item`을 props로 받아와서 상품의 제목 들을 보여줄 수 있도록 코드를 작성하였습니다. 
