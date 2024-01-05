@@ -314,3 +314,13 @@ npm install react-share
       iconFillColor: customize icon fill color (string, default = 'white'): 아이콘 색 설정 기능
 
 
+---
+
+#### 4. Cart 
+
+![image](https://github.com/oiosu/Tomorrow-House/assets/99783474/57b59849-48f9-4ca4-a0d4-220308d51307)
+![image](https://github.com/oiosu/Tomorrow-House/assets/99783474/a562b141-26aa-4176-b5fd-64efce19c3c7)
+
+
+
+
