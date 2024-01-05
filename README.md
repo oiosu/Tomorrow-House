@@ -192,6 +192,14 @@ export default Nav;
 
 #### 📌 오늘의 베스트 상품
 
+```bash
+npm install @reduxjs/toolkit
+```
+
+```bash
+npm install react-redux
+```
+
 ![image](https://github.com/oiosu/Tomorrow-House/assets/99783474/2c7105b7-a43c-479a-acb4-26d018972e77)
 
 ```javascript
