@@ -80,7 +80,9 @@ const Banner = () => {
 
 ```
 
-### 📌 코드 중복성 줄이기 
+
+#### 📌 코드 중복성 줄이기 
+
 
 > 코드를 더 유지 관리 쉽고 읽기 쉽게 만들 수 있도록 다음과 같이 코드를 수정하는 방향으로 생각보았습니다.
 > 
@@ -129,6 +131,54 @@ export default CategoryList;
 
 ```
 
+#### 📌 알림을 자동으로 숨기는 기능 
+
+![2024-01-05-11_32_38](https://github.com/oiosu/Tomorrow-House/assets/99783474/3d49ad90-3861-4eed-8e37-91d5492c5bef)
+
+```javascript
+import React, { useEffect, useState } from "react";
+
+const Nav = () => {
+        //alert 구현
+        let [alert, setAlert] = useState(true)
+        // 재랜더링 마다 코드 실행
+        useEffect(() => {
+          let a = setTimeout(() => { setAlert(false) }, 10000)
+          // mout시 실행안됨, unmout시 실행됨
+          return () => {
+            clearTimeout(a)
+          }
+        }, [])
+        return (
+          <NavComponent>
+
+            //...
+
+            <div className="nav-footer">
+              {
+                alert === true
+                  ? <div className="alert" >
+                    5시간 이내 구매시 할인
+                  </div>
+                  : null
+              }
+            </div>
+        </NavComponent>
+        );
+      };
+      
+export default Nav;
 
 
 
+//...
+
+
+```
+> 해당 알림은 컴포넌트가 처음 mount 되었을때 10초 동안 보여진 후 자동으로 사라지도록 구현하였습니다. `useEffect`를 사용하여 타이머를 설정하고 mount 해제시에는 타이머를 정리하는 방식으로 구현하였습니다.
+
+
+
+#### 📌 오늘의 베스트 상품
+
+![image](https://github.com/oiosu/Tomorrow-House/assets/99783474/2c7105b7-a43c-479a-acb4-26d018972e77)
