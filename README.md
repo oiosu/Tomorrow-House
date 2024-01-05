@@ -1,4 +1,4 @@
-## 🏠 Tomorrow-House
+![2024-01-05-12_13_06](https://github.com/oiosu/Tomorrow-House/assets/99783474/bdc66620-a139-44a5-95e6-158f048a413b)## 🏠 Tomorrow-House
 
 #### ◼ 2309 SuperCoding TEAM 01 PJT 2 
 
@@ -48,6 +48,7 @@
 ![image](https://github.com/oiosu/Tomorrow-House/assets/99783474/50f3c499-8499-4ee2-82f6-3b6c9fd17847)
 
 
+---
 
 
 #### 📌 Swiper
@@ -87,6 +88,7 @@ const Banner = () => {
 ```
 
 
+---
 
 
 #### 📌 코드 중복성 줄이기 
@@ -139,6 +141,8 @@ export default CategoryList;
 
 ```
 
+---
+
 
 
 #### 📌 알림을 자동으로 숨기는 기능 
@@ -187,6 +191,8 @@ export default Nav;
 ```
 > 해당 알림은 컴포넌트가 처음 mount 되었을때 10초 동안 보여진 후 자동으로 사라지도록 구현하였습니다. `useEffect`를 사용하여 타이머를 설정하고 mount 해제시에는 타이머를 정리하는 방식으로 구현하였습니다.
 
+
+---
 
 
 
@@ -284,3 +290,28 @@ export default data;
 > * Redux의 addItem 액션을 호출하여 장바구니에 상품을 추가합니다.
 >
 >  상품 정보를 나타내는 Card 함수형 컴포넌트에는 `item`을 props로 받아와서 상품의 제목 들을 보여줄 수 있도록 코드를 작성하였습니다. 
+
+
+---
+
+
+
+#### 📌 React Share 
+
+```bash
+npm install react-share
+```
+
+
+![2024-01-05-12_13_06](https://github.com/oiosu/Tomorrow-House/assets/99783474/f2765cb6-f60e-4f3a-93e6-222a5d303599)
+
+
+* 선언 시 사용할 수 있는 props는 총 6가지
+
+            size: Icon size in pixels (number): 아이콘 사이즈(픽셀 단위)
+            round: Whether to show round or rect icons (bool): 아이콘을 둥글게 혹은 사각형으로
+            borderRadius: Allow rounded corners if using rect icons (number): 테두리
+            bgStyle: customize background style, e.g. fill (object): 배경색 설정 기능
+            iconFillColor: customize icon fill color (string, default = 'white'): 아이콘 색 설정 기능
+
+
