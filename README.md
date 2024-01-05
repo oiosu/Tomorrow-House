@@ -1,4 +1,4 @@
-![2024-01-05-12_13_06](https://github.com/oiosu/Tomorrow-House/assets/99783474/bdc66620-a139-44a5-95e6-158f048a413b)## 🏠 Tomorrow-House
+## 🏠 Tomorrow-House
 
 #### ◼ 2309 SuperCoding TEAM 01 PJT 2 
 
@@ -303,7 +303,7 @@ npm install react-share
 ```
 
 
-![2024-01-05-12_13_06](https://github.com/oiosu/Tomorrow-House/assets/99783474/f2765cb6-f60e-4f3a-93e6-222a5d303599)
+![2024-01-05-12_13_06](https://github.com/oiosu/Tomorrow-House/assets/99783474/bdc66620-a139-44a5-95e6-158f048a413b
 
 
 * 선언 시 사용할 수 있는 props는 총 6가지
